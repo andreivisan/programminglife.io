@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { ServicesSection } from "./ServicesSection";
+import { MentorshipSection } from "./MentorshipSection";
 
 export const Hero = () => {
   return (
@@ -23,6 +24,7 @@ export const Hero = () => {
           </Button>
         </div>
       </div>
+      <MentorshipSection />
       <ServicesSection />
     </div>
   );
