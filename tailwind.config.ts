@@ -18,11 +18,14 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        orbitron: ["Orbitron", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "#221F26",
+        background: "#0A0B0F",
         foreground: "#F2FCE2",
         primary: {
           DEFAULT: "#9b87f5",
@@ -39,6 +42,11 @@ export default {
         lila: {
           DEFAULT: "#9b87f5",
           muted: "#8B7BE0",
+        },
+        neon: {
+          blue: "#0EA5E9",
+          purple: "#9b87f5",
+          cyan: "#22D3EE",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
