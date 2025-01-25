@@ -1,4 +1,4 @@
-import { Code2, Brain, Database, Architecture } from "lucide-react";
+import { Code2, Brain, Database, Building2 } from "lucide-react";
 
 export const ServicesSection = () => {
   const services = [
@@ -20,7 +20,7 @@ export const ServicesSection = () => {
     {
       title: "Software Architecture",
       description: "Strategic guidance on software architecture patterns and best practices for complex systems.",
-      icon: <Architecture className="w-8 h-8 text-neon-cyan" />,
+      icon: <Building2 className="w-8 h-8 text-neon-cyan" />,
     },
   ];
 
