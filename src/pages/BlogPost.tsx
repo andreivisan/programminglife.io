@@ -52,9 +52,10 @@ Key areas we'll explore:
       date: "2024-02-05",
       readTime: "6 min read",
     },
-  };
+  } as const;
 
-  const post = blogPosts[id as keyof typeof blogPosts];
+  const postId = id ? parseInt(id) : null;
+  const post = postId && postId in blogPosts ? blogPosts[postId as keyof typeof blogPosts] : null;
 
   if (!post) {
     return <div>Post not found</div>;
