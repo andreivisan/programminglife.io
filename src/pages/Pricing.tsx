@@ -106,7 +106,9 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full bg-neon-purple hover:bg-neon-purple/80">Get Started</Button>
+                <button className="w-full py-3 px-6 rounded-lg font-orbitron text-neon-cyan border border-neon-cyan bg-transparent hover:bg-gradient-to-r hover:from-pink-500 hover:to-neon-cyan hover:border-transparent hover:text-white transition-all duration-300">
+                  Get Started
+                </button>
               </div>
             ))}
           </div>
@@ -131,7 +133,9 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
-                <Button className="w-full bg-neon-cyan hover:bg-neon-cyan/80">Get Started</Button>
+                <button className="w-full py-3 px-6 rounded-lg font-orbitron text-neon-cyan border border-neon-cyan bg-transparent hover:bg-gradient-to-r hover:from-pink-500 hover:to-neon-cyan hover:border-transparent hover:text-white transition-all duration-300">
+                  Get Started
+                </button>
               </div>
             ))}
           </div>
