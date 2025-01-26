@@ -1,3 +1,10 @@
+---
+title: "System Design Best Practices"
+excerpt: "Essential principles and patterns for designing robust systems..."
+date: "2024-02-05"
+readTime: "6 min read"
+---
+
 # System Design Best Practices
 
 Designing scalable and maintainable systems is crucial for modern applications. This article explores key principles and patterns that help create robust system architectures.

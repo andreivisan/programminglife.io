@@ -1,4 +1,4 @@
-import { Github, Twitter, Youtube, Linkedin } from "lucide-react";
+import { Github, X, Youtube, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="flex flex-col items-center justify-center space-y-6">
           <div className="flex space-x-8">
             <a
-              href="https://github.com"
+              href="https://github.com/andreivisan"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neon-cyan hover:text-neon-cyan/80 transition-colors"
@@ -16,15 +16,15 @@ export const Footer = () => {
               <Github className="h-6 w-6" />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://twitter.com/andreivisan"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neon-cyan hover:text-neon-cyan/80 transition-colors"
             >
-              <Twitter className="h-6 w-6" />
+              <X className="h-6 w-6" />
             </a>
             <a
-              href="https://youtube.com"
+              href="https://www.youtube.com/channel/UCKQwvIlLeqy8qKC4tKgIUTw"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neon-cyan hover:text-neon-cyan/80 transition-colors"
@@ -32,7 +32,7 @@ export const Footer = () => {
               <Youtube className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/andreivisan/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neon-cyan hover:text-neon-cyan/80 transition-colors"

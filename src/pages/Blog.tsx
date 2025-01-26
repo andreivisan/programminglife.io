@@ -1,30 +1,80 @@
 import { Navbar } from "@/components/Navbar";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+
+interface BlogPost {
+  id: number;
+  title: string;
+  excerpt: string;
+  date: string;
+  readTime: string;
+}
+
+// Simple function to parse frontmatter
+const parseFrontmatter = (content: string) => {
+  const frontmatterRegex = /^---\n([\s\S]*?)\n---/;
+  const match = content.match(frontmatterRegex);
+  
+  if (!match) return null;
+  
+  const frontmatter = match[1];
+  const data: Record<string, string> = {};
+  
+  frontmatter.split('\n').forEach(line => {
+    const [key, ...valueParts] = line.split(':');
+    if (key && valueParts.length) {
+      // Remove quotes and trim whitespace
+      data[key.trim()] = valueParts.join(':').replace(/^[\s"]+|[\s"]+$/g, '');
+    }
+  });
+  
+  return data;
+};
 
 const Blog = () => {
-  const blogPosts = [
-    {
-      id: 1,
-      title: "Getting Started with Modern Web Development",
-      excerpt: "Learn the essential tools and technologies for modern web development...",
-      date: "2024-02-15",
-      readTime: "5 min read",
-    },
-    {
-      id: 2,
-      title: "Building Scalable AI Systems with Python",
-      excerpt: "A comprehensive guide to developing AI systems that can scale...",
-      date: "2024-02-10",
-      readTime: "8 min read",
-    },
-    {
-      id: 3,
-      title: "System Design Best Practices",
-      excerpt: "Essential principles and patterns for designing robust systems...",
-      date: "2024-02-05",
-      readTime: "6 min read",
-    },
-  ];
+  const [blogPosts, setBlogPosts] = useState<BlogPost[]>([]);
+
+  useEffect(() => {
+    const loadBlogPosts = async () => {
+      const posts: BlogPost[] = [];
+      
+      // Get all markdown files from the content directory
+      const modules = import.meta.glob('@/content/*.md', { 
+        query: '?raw',
+        import: 'default'
+      });
+      
+      for (const [path, loader] of Object.entries(modules)) {
+        try {
+          const content = await loader() as string;
+          const data = parseFrontmatter(content);
+          
+          if (!data) {
+            continue;
+          }
+          
+          // Extract the blog ID from the filename (e.g., "blog-1.md" -> "1")
+          const id = parseInt(path.match(/blog-(\d+)\.md$/)?.[1] || "0");
+          
+          posts.push({
+            id,
+            title: data.title,
+            excerpt: data.excerpt,
+            date: data.date,
+            readTime: data.readTime
+          });
+        } catch (error) {
+          console.error(`Error loading blog post from ${path}:`, error);
+        }
+      }
+      
+      // Sort posts by date (newest first)
+      posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+      setBlogPosts(posts);
+    };
+
+    loadBlogPosts();
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
