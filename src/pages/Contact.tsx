@@ -29,13 +29,27 @@ const Contact = () => {
   });
 
   const onSubmit = async (data: FormData) => {
+    console.log("Submitting form with data:", data);
     try {
       const response = await fetch("/api/send-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "X-SendGrid-API-Key": "test_key", // Note: This is just for demonstration
         },
-        body: JSON.stringify(data),
+        body: JSON.stringify({
+          to: "recipient@example.com", // Replace with your email
+          from: data.email,
+          subject: `New Contact Form Submission from ${data.name}`,
+          text: data.message,
+          html: `
+            <h3>New Contact Form Submission</h3>
+            <p><strong>Name:</strong> ${data.name}</p>
+            <p><strong>Email:</strong> ${data.email}</p>
+            <p><strong>Message:</strong></p>
+            <p>${data.message}</p>
+          `,
+        }),
       });
 
       if (!response.ok) {
