@@ -25,7 +25,7 @@ export const MentorshipSection = () => {
   ];
 
   return (
-    <section className="w-full py-20 px-4">
+    <section id="mentorship-section" className="w-full py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-orbitron text-center mb-4 bg-gradient-to-r from-neon-cyan to-neon-purple bg-clip-text text-transparent">
           Mentorship Programs

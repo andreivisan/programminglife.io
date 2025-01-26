@@ -19,8 +19,10 @@ export const Hero = () => {
             Start Learning
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
-          <Button size="lg" variant="outline" className="border-neon-cyan text-neon-cyan hover:bg-neon-cyan/10 font-orbitron">
-            View Services
+          <Button asChild size="lg" variant="outline" className="border-neon-cyan text-neon-cyan hover:bg-neon-cyan/10 font-orbitron">
+            <a href="#mentorship-section">
+              View Services
+            </a>
           </Button>
         </div>
       </div>
