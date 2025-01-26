@@ -24,6 +24,9 @@ export const Navbar = () => {
             <Link to="/pricing" className="font-orbitron text-mint hover:text-mint-muted transition-colors">
               Pricing
             </Link>
+            <Link to="/contact" className="font-orbitron text-mint hover:text-mint-muted transition-colors">
+              Contact
+            </Link>
             <Button variant="secondary" className="bg-neon-purple hover:bg-neon-purple/80 font-orbitron">
               Get Started
             </Button>
@@ -58,6 +61,13 @@ export const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Pricing
+            </Link>
+            <Link
+              to="/contact"
+              className="block px-3 py-2 font-orbitron text-mint hover:text-mint-muted transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
             </Link>
             <div className="px-3 py-2">
               <Button className="w-full bg-neon-purple hover:bg-neon-purple/80 font-orbitron">
