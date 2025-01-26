@@ -98,7 +98,40 @@ export default {
         "fade-in": "fade-in 0.5s ease-out",
         "fade-up": "fade-up 0.5s ease-out",
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#F2FCE2',
+            h2: {
+              color: '#F2FCE2',
+              fontFamily: 'Orbitron, sans-serif',
+            },
+            h3: {
+              color: '#F2FCE2',
+              fontFamily: 'Orbitron, sans-serif',
+            },
+            strong: {
+              color: '#F2FCE2',
+            },
+            a: {
+              color: '#22D3EE',
+              '&:hover': {
+                color: '#0EA5E9',
+              },
+            },
+            code: {
+              color: '#22D3EE',
+            },
+            pre: {
+              backgroundColor: '#1E1E1E',
+            },
+          },
+        },
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [
+    require("tailwindcss-animate"),
+    require("@tailwindcss/typography")
+  ],
 } satisfies Config;

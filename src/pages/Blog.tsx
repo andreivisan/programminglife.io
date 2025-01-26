@@ -39,7 +39,7 @@ const Blog = () => {
       const posts: BlogPost[] = [];
       
       // Get all markdown files from the content directory
-      const modules = import.meta.glob('@/content/blog-*.md', { 
+      const modules = import.meta.glob('@/content/*.md', { 
         query: '?raw',
         import: 'default'
       });
