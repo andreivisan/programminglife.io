@@ -1,3 +1,10 @@
+---
+title: "Getting Started with Modern Web Development"
+excerpt: "Learn the essential tools and technologies for modern web development..."
+date: "2024-02-15"
+readTime: "5 min read"
+---
+
 # Getting Started with Modern Web Development
 
 Modern web development has evolved significantly over the past few years. With the advent of new frameworks, tools, and best practices, it's crucial to stay up-to-date with the latest trends and technologies.
