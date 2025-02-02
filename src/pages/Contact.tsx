@@ -29,7 +29,7 @@ const Contact = () => {
     {
       title: "Email",
       icon: <Mail className="h-full w-full text-mint hover:text-mint-muted" />,
-      href: "mailto:your.email@example.com",
+      href: "mailto:contact@programminglife.io",
     },
   ];
 
