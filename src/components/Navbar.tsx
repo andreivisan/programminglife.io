@@ -27,8 +27,8 @@ export const Navbar = () => {
             <Link to="/contact" className="font-orbitron text-mint hover:text-mint-muted transition-colors">
               Contact
             </Link>
-            <Button variant="secondary" className="bg-neon-purple hover:bg-neon-purple/80 font-orbitron">
-              Get Started
+            <Button asChild variant="secondary" className="bg-neon-purple hover:bg-neon-purple/80 font-orbitron">
+              <Link to="/contact">Get Started</Link>
             </Button>
           </div>
 
@@ -70,8 +70,8 @@ export const Navbar = () => {
               Contact
             </Link>
             <div className="px-3 py-2">
-              <Button className="w-full bg-neon-purple hover:bg-neon-purple/80 font-orbitron">
-                Get Started
+              <Button asChild className="w-full bg-neon-purple hover:bg-neon-purple/80 font-orbitron">
+                <Link to="/contact" onClick={() => setIsOpen(false)}>Get Started</Link>
               </Button>
             </div>
           </div>

@@ -49,8 +49,20 @@ const Contact = () => {
               }}
               className="mt-8 bg-gradient-to-br from-mint to-lila py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
             >
-              Let's Build Something <br /> Amazing Together
+              Ready to Transform Your Ideas Into Reality?
             </motion.h1>
+            <motion.p
+              initial={{ opacity: 0, y: 100 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{
+                delay: 0.4,
+                duration: 0.8,
+                ease: "easeInOut",
+              }}
+              className="mt-4 text-mint/80 text-center text-xl"
+            >
+              Connect with me through any of these platforms below and let's create something extraordinary together.
+            </motion.p>
           </LampContainer>
         </div>
         

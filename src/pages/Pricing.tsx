@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Pricing = () => {
   const freelancingPlans = [
@@ -106,9 +107,9 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full py-3 px-6 rounded-lg font-orbitron text-neon-cyan border border-neon-cyan bg-transparent hover:bg-gradient-to-r hover:from-pink-500 hover:to-neon-cyan hover:border-transparent hover:text-white transition-all duration-300">
-                  Get Started
-                </button>
+                <Button asChild className="w-full py-3 px-6 rounded-lg font-orbitron text-neon-cyan border border-neon-cyan bg-transparent hover:bg-gradient-to-r hover:from-pink-500 hover:to-neon-cyan hover:border-transparent hover:text-white transition-all duration-300">
+                  <Link to="/contact">Get Started</Link>
+                </Button>
               </div>
             ))}
           </div>
@@ -133,9 +134,9 @@ const Pricing = () => {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full py-3 px-6 rounded-lg font-orbitron text-neon-cyan border border-neon-cyan bg-transparent hover:bg-gradient-to-r hover:from-pink-500 hover:to-neon-cyan hover:border-transparent hover:text-white transition-all duration-300">
-                  Get Started
-                </button>
+                <Button asChild className="w-full py-3 px-6 rounded-lg font-orbitron text-neon-cyan border border-neon-cyan bg-transparent hover:bg-gradient-to-r hover:from-pink-500 hover:to-neon-cyan hover:border-transparent hover:text-white transition-all duration-300">
+                  <Link to="/contact">Get Started</Link>
+                </Button>
               </div>
             ))}
           </div>

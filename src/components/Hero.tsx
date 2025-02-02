@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { ServicesSection } from "./ServicesSection";
 import { MentorshipSection } from "./MentorshipSection";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
@@ -15,9 +16,11 @@ export const Hero = () => {
           From web development to AI, we've got you covered.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-up" style={{ animationDelay: "0.4s" }}>
-          <Button size="lg" className="bg-neon-purple hover:bg-neon-purple/80 font-orbitron">
-            Start Learning
-            <ArrowRight className="ml-2 h-5 w-5" />
+          <Button asChild size="lg" className="bg-neon-purple hover:bg-neon-purple/80 font-orbitron">
+            <Link to="/contact">
+              Start Learning
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
           </Button>
           <Button asChild size="lg" variant="outline" className="border-neon-cyan text-neon-cyan hover:bg-neon-cyan/10 font-orbitron">
             <a href="#mentorship-section">
