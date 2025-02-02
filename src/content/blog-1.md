@@ -1,104 +1,93 @@
 ---
-title: "The World Doesn’t Change in 7 Months, But You Can"
-excerpt: "In just seven months, the world might not change much, but you certainly can."
-date: "2024-05-04"
-readTime: "8 min read"
+title: "From Coding to Craft: The Real Divide Between Coders and Professional Enterprise Software Engineers"
+excerpt: "Let’s dive together into a realm where not all code is created equal..."
+date: "2024-03-16"
+readTime: "7 min read"
 ---
 
-In just seven months, the world might not change much, but you certainly can. As a seasoned software developer, I’ve navigated the swift currents of technology and personal ambition to discover that focus — not speed — is the key to profound and lasting improvement. Join me as we explore how setting a deliberate pace in a fast-moving world can lead to significant personal and professional growth. Whether you’re polishing your coding skills or shaping your career path, let’s learn to harness the power of dedicating time to what truly matters.
+Let’s dive together into a realm where not all code is created equal, and discover what truly sets apart the real Enterprise Software Engineers from those who merely ‘make things work’.
 
 ## Reason
 
-Whether you’re a fellow software engineer (like I suspect you might be) or not, this article has something for everyone. You might even find a few helpful tips that could change the way you work or think.
+A good place to start is by understanding the reasoning behind this article.
 
-As software engineers, our world moves fast. What today is an idea or a rumour, tomorrow is a standard and the whole world is using it. I guess reading this lines your mind goes in the same place as mine — AI. Although people have been working on developing AI for decades, once it took shape into something accessible to everyone, it took over the world in a matter of months.
+I’ve been in the Enterprise Software industry for 18 years, initially starting as a Backend Engineer. However, I quickly shifted to Full-Stack Engineering due to my eagerness to fully grasp and independently tackle all aspects of complex applications. This transition was fuelled by a desire to not just understand, but to personally resolve the multifaceted layers that come with such systems.
 
-These rapid advancements in the world of technology are what keep our work exciting and engaging. There’s never a dull moment! And even if you’re not a software engineer, chances are you work on a computer and use technology regularly. However, along with the benefits of these advancements comes anxiety, imposter syndrome, and the nagging question:
-
-> Am I or my work still relevant?
-
-I want you to know that you’re not alone in feeling this way. It’s a common experience shared by many in our fast-paced, ever-changing world. In this article, we’ll explore ways to navigate these challenges and come out on top. So, grab a warm beverage, get comfortable, and let’s dive in together!
+Over these years, the number of true Senior Developers in Enterprise Software Engineering I’ve had the pleasure to work with and learn from is notably small.
 
 ## Context
 
-You might be wondering, “Why seven months? Why not six, or nine, or twelve?” Let me share a personal milestone: I set myself a goal to get into great shape and launch at least one personal project before turning 40. I’ve been working out for many years and was already in decent shape, though a tad heavier than I felt comfortable with. I was also working on personal projects, but I never finished anything because the question I mentioned earlier — “Am I or my work still relevant?” — kept creeping in, causing me to constantly switch contexts and projects.
+The software industry, being among the youngest sectors, is still in its infancy compared to well-established fields. This immaturity leads to blurred distinctions between terms like Software Engineering, Development, Coding, and Programming — some of which overlap, while others signify entirely different concepts. Since the software sector matured into a distinct industry, the term ‘Enterprise Software Engineer’ has been coined. Despite this, we still encounter unclear distinctions when evaluating the differences between a skilled programmer and a proficient Enterprise Software Engineer. This ambiguity mainly concerns those with considerable programming skills, as less competent individuals can typically be identified more straightforwardly.
 
-So, why seven months? Honestly, there’s no scientific reason — it’s simply the timeframe I chose that felt right. It’s a personal challenge. If you’re considering a similar journey, choose a timeframe that feels manageable to you — anything between six to nine months is ideal. Anything longer might feel too slow, and anything shorter might not allow enough time to see real, tangible results.
+## What is an Enterprise Software Engineer
 
-> The core of this article is about finding the focus and courage to commit to one goal, without the fear of missing out on other opportunities as the world rapidly changes around us.
+Firstly, we need to understand that software engineering is defined by its scope. Significant differences exist between working solo on small to medium projects and collaborating within large teams on complex systems that must endure and evolve over time. Enterprise Software, as you might guess, falls into the latter category. This article won’t delve into the necessary soft skills like communication, teamwork, and creativity, despite their importance. Instead, our focus will be on the technical competencies related to code craftsmanship.
 
-It’s about claiming your own pace in a fast-moving world, so you can truly shine.
+As mentioned above, enterprise software involves managing large, complex systems that must not only endure over time but also adapt seamlessly. These systems evolve with contributions from various engineers and teams. Over years, the workforce developing and maintaining an enterprise system may change significantly from the original team. And that applies to every stage in the development and evolution of a large enterprise software system. This cycle is typical for large-scale systems, underscoring the necessity for well-thought-out architectural and development decisions from the start and throughout the system’s life, especially as new features are integrated.
 
-## The Fear Of Missing Out
+Given all the above we can more clearly see that just being a good programmer is a very very small piece of the big puzzle that constitutes what an enterprise software engineer is.
 
-Throughout my nearly 20-year career in software development, I’ve embarked on numerous projects — some as hobbies, some for learning, and others driven by the dream of creating products that might lead to financial freedom. It’s with a touch of sadness that I confess I didn’t finish any of them. Until recently, that is — but more on that soon.
+What are the other pieces? Those we will cover in the paragraph below but for now let’s try and formulate a definition for an enterprise software engineer.
 
-I spent some time reflecting deeply on why none of these projects reached completion. Was it the allure of new, shiny ideas? Or perhaps the transition from the excitement of development to the more mundane tasks of testing and bug fixing? Surprisingly, the answer to both was a resounding “No.” My enthusiasm for my ideas never waned, despite the constant emergence of new ones. I love every phase of software development, so what was holding me back?
+> An Enterprise Software Engineer possesses all the skills of a proficient programmer, including a deep understanding of software performance fundamentals. They excel in teams of any size, working collaboratively with peers. Beyond technical skills, they understand the importance of applying design patterns and principles to build robust, maintainable, and extendable software, ensuring easy integration with other systems without the need for modifications.
 
-After some serious introspection, I realized the root of my struggle was fear — fear of being left behind by the ever-evolving tech landscape. This fear created a mental block, preventing me from seeing that I had enough time to finish my current project before moving on to the next. And just when I thought I had it figured out, a new dilemma arose:
+## Principles that an Enterprise Software Engineer should apply
 
-> What if I need to learn a new topic while also building my next project? Damn, now I was blocked again. How could I get out of this situation?
+Not everyone has to become an Enterprise Software Engineer. However, if you aspire to work in a large enterprise, develop complex systems, experience working with large databases, and integrate complex systems with each other, as well as scaling large software systems, then please continue reading.
 
-# Life Has Seasons Too
+We defined what an Enterprise Software Engineer is. Now let’s unpack that definition and understand what each point means.
 
-One beautiful spring day, while finally listening to the song of the birds and being embraced by the warmth of the sun, I realized how beautiful spring is. How it brings renewal and hope. Then another thought came to my mind — Is spring my favorite season? Then I realized I love all seasons just the same for what they bring. And they all bring something different.
+### Robust Software
 
-> Just like the year has its seasons, life has them too.
+> When discussing robust software, the first aspect to keep in mind is testing.
 
-There are seasons for building and others for learning. There’s no need to do them at the same time. You will not miss anything by learning what you want to learn later, or by building what you want to build once you’ve finished your season of learning. And even better, sometimes while learning you must build, and often when building you must learn. But nevertheless, your focus should be on one thing at a time. One of the great resources out there is the very famous book by Cal Newport, Deep Work.
+Testing is a vast topic in itself; however, in this context, I’ll highlight the crucial elements indispensable in enterprise software engineering. Before delving further, it’s important to address Test-Driven Development (TDD). Personally, I believe that TDD is not always the best fit for large enterprise systems, and in my view, it can be impractical. Nevertheless, if one is accustomed to developing in the TDD manner, continue with this approach as it offers a reliable and robust coding methodology.
 
-Also, if you are coming out of a heavy season, consider taking a break. Recharge, heal, rebuild yourself before you start a new season with all its challenges and beauty.
+The three most important types of testing in Enterprise Software are: unit testing, integration testing, and functional testing. While I won’t delve into the specifics of each, it’s critical to understand that testing acts as a safety net for your software system. It ensures that each unit operates as intended, integration with other systems is seamless, and, from end to end, the system functions flawlessly. Furthermore, testing guarantees that new features added do not break existing functionalities at the unit, system, and full end-to-end levels.
 
-## How To Choose What To Focus On?
+### Maintainable Software
 
-When I realized that for the next seven months (in my case), I would have to choose one area to focus on, a grounding and mindful feeling washed over me. It’s a serious moment — choosing my season. Am I in a season of learning, or in a season of building? Once this decision is made, the next step is to choose my topic: What is the project I will focus on until it’s complete? What is the topic I will immerse myself in until I have mastered it?
+> The most crucial aspect of maintainable software systems is the implementation of SOLID principles.
 
-Being thoughtful about what we dedicate our most valuable commodity — time — to is something we should always strive to do.
+Adhering to these guidelines ensures that future development — whether adding new features or modifying existing ones — will be efficient and seamless. Additionally, when new developers or teams begin working on the existing code, it will be straightforward for them to comprehend the code and advance in the correct direction.
 
-> If there’s one thing we should be perpetually mindful of, it’s how we spend our time.
+A brief review of the solid principles.
 
-This ensures that whatever we pick is not only important and worthy but also serves as a potent motivator to maintain our focus for the next seven months.
+1. **The Single Responsibility Principle (SRP)** — SRP suggests that a piece of software should focus on a single functionality or responsibility. By adhering to this principle, code becomes more robust, easier to understand, and simpler to update or modify without affecting other parts of the system.
+2. **The Open Closed Principle (OCP)** — OCP promotes designing modules that don’t require changes when adding new features. Instead, the system is developed in a way that allows it to be extended without altering existing code, enhancing maintainability and reducing the risk of bugs.
+3. **The Liskov Substitution Principle (LSP)** — LSP ensures that subclasses can stand in for their parent classes without disrupting the application. This principle reinforces the importance of having a properly designed hierarchy where subclasses maintain the expected behavior of their base class.
+4. **The Interface Segregation Principle (ISP)** — ISP encourages splitting large interfaces into smaller, more specific ones so that clients only need to know about the methods that are of interest to them, leading to a cleaner, decoupled codebase.
+5. **The Dependency Inversion Principle (DIP)** — — DIP advocates for a system’s design where high-level modules are not dependent on low-level modules, but both are dependent on abstractions. This means that rather than having business logic depend on database or other lower-level components, both should rely on interfaces or abstract classes.
 
-I always follow these steps when deciding what to focus on:
+Besides the principles outlined above, code should be reusable and as decoupled as possible. For a better and more comprehensive understanding of these principles, please refer to “Clean Code” by Robert C. Martin.
 
-1. Determining whether I’m in a learning season or a building season.
-2. Identifying the top three projects I want to build or topics I want to learn.
-3. From these options, selecting the one that excites me the most right now.
-4. [OPTIONAL] If all options equally excite me, choosing the one that best serves my purpose, interests, or business at this moment.
+### Extendable Software
 
-Remember, this is your journey, and you have the power to shape it in a way that brings you joy, fulfilment, and growth. Don’t be afraid to take a step back, assess your priorities, and make choices that align with your values and goals. You’ve got this!
+> When considering extendable software, one of the most crucial aspects is the correct application of Design Patterns.
 
-## Why Do I Have To Choose Just One?
+With extendability in mind, the goal is to ensure that new functionality can be easily added without altering existing code.
 
-No matter how smart you are, you can only give your 100% to one thing at a time. A quote that once resonated with me and has since stuck is:
+Regardless of the programming language one is using, relevant and correct implementation of design patterns is mandatory in order to keep complex features simple, modular, and easy to extend.
 
-> “How you do one thing, you do everything.”
+On my [YouTube channel](https://www.youtube.com/@programminglifeio), I have created easy-to-understand videos explaining the most important design patterns. If these do not meet your preferences, there are numerous other resources available on YouTube, as well as various blogs and websites, should you favour reading over video content.
 
-Learn to focus on one thing at a time and do it right. You chose to spend your time on it, so give it your best effort while you’re at it.
+## The unavoidable Interview Process discussion
 
-Also, considering the timeline you’ve set, if you aim to respect it and build something valuable that can be considered a finished product, you’ll need full focus.
+Before we delve into the interview process, let’s discuss how you can become a better Enterprise Software Engineer. There are two key aspects:
 
-I know it can be tempting to try and juggle multiple projects or learning goals at once, especially when you’re passionate about so many things. By focusing on one thing at a time, you allow yourself the opportunity to fully immerse yourself in the process, learn deeply, and create something truly remarkable.
+1. **Code every day** — Regardless of your job, the likelihood that you write a lot of code during your regular 9-to-5 is slim. If you do, consider yourself fortunate and apply the following principles over the weekend. If you don’t, seek opportunities to tackle challenging projects and solve difficult problems. For this, resources such as Manning’s LiveCoding and CodeCrafters’ “Build Your Own X” GitHub repository can offer numerous topics and projects to refine your skills. If you find yourself struggling to commit, reassess your priorities and passion for software development. If it’s not there, it might be worth exploring what you truly love.
+2. **Solve very hard problems** — Similar to progressive overload in the gym, the key to developing new skills in software is to tackle increasingly challenging problems and projects. With each problem solved or project completed, ensure the application of the aforementioned principles, making them a routine part of your software development practice.
 
-Many of us have jobs, which means we have limited time to invest in the extra projects we decide to focus on. Some of you are also parents, making your time even more precious. Given all these aspects of what we call “life,” it makes an even stronger argument for focusing on one thing at a time. This way, in the limited hours we have to invest in our passions, we can truly give our all.
-
-Remember, it’s not about doing everything at once. It’s about doing one thing exceptionally well and then moving on to the next. By adopting this mindset, you’ll find that you’re able to accomplish more and with greater depth and quality. So, be kind to yourself, and give yourself permission to focus on one thing at a time.
-
-## Finish!
-
-One lesson I’ve learned is that no matter what we choose to start, it holds no value until we finish it. Completing what we’ve begun is what brings joy and satisfaction from the time we’ve invested in our chosen project. If we don’t finish, we’re left with the bitter taste of wasted time — and believe me, I’ve felt it many times; it’s not something I recommend.
-
-Finishing brings closure; it allows us to move on to the next thing without the nagging feeling of unfinished business. Closure is important! This doesn’t mean that once you build a project that could become a business, you stop there. But you have finished the building phase. You succeeded.
-
-> Once you’ve finished, celebrate. Enjoy! You did it. Take a break, take a holiday — do anything that makes you feel successful, because you are.
-
-Remember, finishing is a habit, just like anything else. The more you practice it, the easier it becomes. So, keep pushing forward, keep focusing on your goals, and keep finishing what you start. You have the power to create incredible things, and I have no doubt that you will.
+Regarding the interview, the central question is: Are interviews focusing solely on algorithms, data structures, or system design sufficient? The answer is no. Neither approach can accurately assess whether someone is a good Enterprise Software Engineer. Are they necessary? Yes, but only in the initial stage of the interview process, to distinguish poor programmers from competent ones. Following this, home assignments or any form of coding sessions, where Enterprise Software Development principles are applied, offer a much more effective method to evaluate if someone is a suitable candidate for an enterprise software engineer role.
 
 ## Conclusion
 
-We live in interesting and challenging times. Working at a slow and focused pace might seem impossible with the speed at which things change and evolve. But that’s just a perception — in reality, it isn’t impossible. We might not always have five years to focus on one thing, but we can adapt and invest a substantial number of months in whatever we feel is valuable to us. Let’s not allow this fast-paced era to hinder our growth. Instead, let’s create our own timeline that allows us to evolve and create at a pace we are comfortable with, while taking advantage of all the progress around us.
+During this article, I revisited concepts previously covered to emphasize their critical importance in developing large enterprise systems. Throughout my career, I’ve witnessed these concepts being sacrificed for speed, which ultimately compromised the software system and burdened future development teams. This is a primary reason why ‘legacy system’ or ‘legacy code’ often carries a negative connotation.
+
+If sufficient thought, effort, and time are invested in designing and architecting a complex system, future development can be expedited tenfold, if not more. While initial features may take longer to deploy in production, subsequent ones will be developed significantly faster, saving immense amounts of time, effort, and headaches. Moreover, even vast systems can be maintained and extended by just a few skilled enterprise engineers, enhancing their job satisfaction by sparing them from dealing with unwieldy legacy code. In the long run, enterprises will benefit financially and operationally.
+
+> The key takeaway for engineers is to hone the skills outlined above using the techniques discussed in this article. Additionally, this piece, along with the resources mentioned, should support your arguments for the necessity of proper design and development of enterprise systems over immediate speed gains.
+
+> For enterprises, the investment in such skilled engineers will mitigate future issues and save money over time.
 
 Thank you for reading.
-
-
-
