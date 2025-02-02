@@ -2,7 +2,7 @@
 title: "40 Topics Every Java Backend Developer Should Understand"
 excerpt: "The CAP Theorem, also known as Brewer’s Theorem..."
 date: "2024-11-04"
-readTime: "6 min read"
+readTime: "3 min read"
 ---
 
 I found the following tweet online:
