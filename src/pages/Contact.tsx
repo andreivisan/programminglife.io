@@ -38,7 +38,7 @@ const Contact = () => {
       <Navbar />
       <main className="flex-grow flex flex-col items-center justify-center">
         <div className="w-full max-w-[100vw] overflow-hidden">
-          <LampContainer className="w-full bg-[#0EA5E9]">
+          <LampContainer>
             <motion.h1
               initial={{ opacity: 0.5, y: 100 }}
               whileInView={{ opacity: 1, y: 0 }}
