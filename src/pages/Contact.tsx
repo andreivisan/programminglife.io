@@ -1,5 +1,4 @@
 import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
 import { LampContainer } from "@/components/ui/lamp";
 import { Dock, DockIcon, DockItem, DockLabel } from "@/components/ui/dock";
 import { motion } from "framer-motion";
@@ -10,22 +9,22 @@ const Contact = () => {
     {
       title: "GitHub",
       icon: <Github className="h-full w-full text-neutral-600 dark:text-neutral-300" />,
-      href: "https://github.com/yourusername",
+      href: "https://github.com/andreivisan",
     },
     {
       title: "Twitter",
       icon: <Twitter className="h-full w-full text-neutral-600 dark:text-neutral-300" />,
-      href: "https://twitter.com/yourusername",
+      href: "https://twitter.com/andreivisan",
     },
     {
       title: "YouTube",
       icon: <Youtube className="h-full w-full text-neutral-600 dark:text-neutral-300" />,
-      href: "https://youtube.com/@yourusername",
+      href: "https://www.youtube.com/channel/UCKQwvIlLeqy8qKC4tKgIUTw",
     },
     {
       title: "LinkedIn",
       icon: <Linkedin className="h-full w-full text-neutral-600 dark:text-neutral-300" />,
-      href: "https://linkedin.com/in/yourusername",
+      href: "https://linkedin.com/in/andreivisan",
     },
     {
       title: "Email",
@@ -37,8 +36,8 @@ const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow">
-        <LampContainer>
+      <main className="flex-grow flex flex-col items-center justify-center relative">
+        <LampContainer className="w-full max-w-7xl mx-auto">
           <motion.h1
             initial={{ opacity: 0.5, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -51,22 +50,21 @@ const Contact = () => {
           >
             Let's Build Something <br /> Amazing Together
           </motion.h1>
-          
-          <div className="absolute bottom-2 left-1/2 max-w-full -translate-x-1/2">
-            <Dock className="items-end pb-3">
-              {socialLinks.map((item, idx) => (
-                <a key={idx} href={item.href} target="_blank" rel="noopener noreferrer">
-                  <DockItem className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800">
-                    <DockLabel>{item.title}</DockLabel>
-                    <DockIcon>{item.icon}</DockIcon>
-                  </DockItem>
-                </a>
-              ))}
-            </Dock>
-          </div>
         </LampContainer>
+        
+        <div className="fixed bottom-8 left-1/2 -translate-x-1/2 w-full max-w-xl">
+          <Dock className="items-end pb-3">
+            {socialLinks.map((item, idx) => (
+              <a key={idx} href={item.href} target="_blank" rel="noopener noreferrer">
+                <DockItem className="aspect-square rounded-full bg-gray-200 dark:bg-neutral-800">
+                  <DockLabel>{item.title}</DockLabel>
+                  <DockIcon>{item.icon}</DockIcon>
+                </DockItem>
+              </a>
+            ))}
+          </Dock>
+        </div>
       </main>
-      <Footer />
     </div>
   );
 };
