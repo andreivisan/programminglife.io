@@ -25,6 +25,9 @@ jobs:
       - name: Create .nojekyll file
         run: touch dist/.nojekyll
 
+      - name: Copy .gitattributes
+        run: cp .gitattributes dist/
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

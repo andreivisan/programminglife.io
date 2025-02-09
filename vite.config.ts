@@ -29,6 +29,11 @@ export default defineConfig(({ mode }) => ({
         chunkFileNames: 'assets/[name].[hash].js',
         assetFileNames: 'assets/[name].[hash].[ext]'
       }
+    },
+    manifest: true,
+    ssrManifest: true,
+    modulePreload: {
+      polyfill: true
     }
   }
 }));
