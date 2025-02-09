@@ -40,7 +40,7 @@ const About = () => {
     <div className="min-h-screen flex flex-col bg-background hero-gradient">
       <Navbar />
       <main className="flex-grow flex flex-col items-center justify-center pt-16">
-        <div className="w-full max-w-7xl mx-auto relative overflow-hidden">
+        <div className="w-full max-w-7xl mx-auto relative overflow-hidden rounded-xl border border-white/10 bg-background/20 backdrop-blur-sm">
           <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" />
           
           <div className="flex flex-col md:flex-row h-full min-h-[500px]">
