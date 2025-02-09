@@ -6,6 +6,7 @@ import { Spotlight } from "@/components/ui/spotlight";
 import { Dock, DockIcon, DockItem, DockLabel } from "@/components/ui/dock";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Youtube, Twitter } from "lucide-react";
+import { SparklesCore } from "@/components/ui/sparkles";
 
 const About = () => {
   const socialLinks = [
@@ -74,10 +75,23 @@ const About = () => {
 
             {/* Right content */}
             <div className="flex-1 relative">
-              <SplineScene 
-                scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
-                className="w-full h-full"
-              />
+              <div className="relative h-full">
+                <SplineScene 
+                  scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
+                  className="w-full h-full"
+                />
+                <div className="absolute bottom-0 left-0 w-full h-40">
+                  <SparklesCore
+                    background="transparent"
+                    minSize={0.4}
+                    maxSize={1}
+                    particleDensity={100}
+                    className="w-full h-full"
+                    particleColor="#22D3EE"
+                    speed={0.5}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </Card>
