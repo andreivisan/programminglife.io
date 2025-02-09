@@ -1,7 +1,6 @@
 
 import { Navbar } from "@/components/Navbar";
 import { SplineScene } from "@/components/ui/splite";
-import { Card } from "@/components/ui/card";
 import { Spotlight } from "@/components/ui/spotlight";
 import { Dock, DockIcon, DockItem, DockLabel } from "@/components/ui/dock";
 import { Button } from "@/components/ui/button";
@@ -41,7 +40,7 @@ const About = () => {
     <div className="min-h-screen flex flex-col bg-background hero-gradient">
       <Navbar />
       <main className="flex-grow flex flex-col items-center justify-center pt-16">
-        <Card className="w-full max-w-7xl mx-auto bg-transparent relative overflow-hidden border-0">
+        <div className="w-full max-w-7xl mx-auto relative overflow-hidden">
           <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" />
           
           <div className="flex flex-col md:flex-row h-full min-h-[500px]">
@@ -74,8 +73,8 @@ const About = () => {
             </div>
 
             {/* Right content */}
-            <div className="flex-1 relative">
-              <div className="relative h-full">
+            <div className="flex-1 relative flex items-center justify-center">
+              <div className="relative w-full h-[600px]">
                 <SplineScene 
                   scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
                   className="w-full h-full"
@@ -94,7 +93,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </Card>
+        </div>
 
         <div className="fixed bottom-8 left-1/2 -translate-x-1/2 w-full max-w-xl z-50">
           <Dock className="items-end pb-3 glass-card bg-background/20 backdrop-blur-xl border-neon-cyan hover:border-neon-purple transition-colors duration-300">
