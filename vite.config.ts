@@ -20,10 +20,17 @@ export default defineConfig(({ mode }) => ({
     },
   },
   base: process.env.NODE_ENV === 'production' 
-    ? '/programminglife.io/' 
+    ? '/' 
     : '/',
   build: {
     outDir: 'dist',
-    sourcemap: true,
+    manifest: true,
+    rollupOptions: {
+      output: {
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash][extname]'
+      }
+    }
   }
 }));
