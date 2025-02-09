@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
@@ -18,6 +19,9 @@ export const Navbar = () => {
           
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
+            <Link to="/about" className="font-orbitron text-mint hover:text-mint-muted transition-colors">
+              About
+            </Link>
             <Link to="/blog" className="font-orbitron text-mint hover:text-mint-muted transition-colors">
               Blog
             </Link>
@@ -48,6 +52,13 @@ export const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background/95 backdrop-blur-lg">
+            <Link
+              to="/about"
+              className="block px-3 py-2 font-orbitron text-mint hover:text-mint-muted transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              About
+            </Link>
             <Link
               to="/blog"
               className="block px-3 py-2 font-orbitron text-mint hover:text-mint-muted transition-colors"
