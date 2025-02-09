@@ -1,0 +1,6 @@
+*.js    text eol=lf linguist-language=JavaScript
+*.mjs   text eol=lf linguist-language=JavaScript
+*.cjs   text eol=lf linguist-language=JavaScript
+*.jsx   text eol=lf linguist-language=JavaScript
+*.ts    text eol=lf linguist-language=TypeScript
+*.tsx   text eol=lf linguist-language=TypeScript 
