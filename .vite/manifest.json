@@ -1,0 +1,115 @@
+{
+  "_howler.DQFr9x-V.js": {
+    "file": "assets/howler.DQFr9x-V.js",
+    "name": "howler",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ]
+  },
+  "index.html": {
+    "file": "assets/index.BpkOf-Mh.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "dynamicImports": [
+      "src/content/blog-1.md?raw",
+      "src/content/blog-2.md?raw",
+      "src/content/blog-3.md?raw",
+      "src/content/blog-4.md?raw",
+      "src/content/blog-1.md?raw",
+      "src/content/blog-2.md?raw",
+      "src/content/blog-3.md?raw",
+      "src/content/blog-4.md?raw",
+      "node_modules/@splinetool/react-spline/dist/react-spline.js"
+    ],
+    "css": [
+      "assets/index.CvTE9a4s.css"
+    ]
+  },
+  "node_modules/@splinetool/react-spline/dist/react-spline.js": {
+    "file": "assets/react-spline.ymSqBWUs.js",
+    "name": "react-spline",
+    "src": "node_modules/@splinetool/react-spline/dist/react-spline.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "index.html"
+    ],
+    "dynamicImports": [
+      "node_modules/@splinetool/runtime/build/navmesh.js",
+      "node_modules/@splinetool/runtime/build/physics.js",
+      "node_modules/@splinetool/runtime/build/process.js",
+      "node_modules/@splinetool/runtime/build/boolean.js",
+      "_howler.DQFr9x-V.js",
+      "node_modules/@splinetool/runtime/build/opentype.js",
+      "node_modules/@splinetool/runtime/build/ui.js",
+      "node_modules/@splinetool/runtime/build/gaussian-splat-compression.js"
+    ]
+  },
+  "node_modules/@splinetool/runtime/build/boolean.js": {
+    "file": "assets/boolean.BpCokwB2.js",
+    "name": "boolean",
+    "src": "node_modules/@splinetool/runtime/build/boolean.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/@splinetool/runtime/build/gaussian-splat-compression.js": {
+    "file": "assets/gaussian-splat-compression.ro4O0smp.js",
+    "name": "gaussian-splat-compression",
+    "src": "node_modules/@splinetool/runtime/build/gaussian-splat-compression.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/@splinetool/runtime/build/navmesh.js": {
+    "file": "assets/navmesh.BFd9Mv4x.js",
+    "name": "navmesh",
+    "src": "node_modules/@splinetool/runtime/build/navmesh.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/@splinetool/runtime/build/opentype.js": {
+    "file": "assets/opentype.D6jUvuOk.js",
+    "name": "opentype",
+    "src": "node_modules/@splinetool/runtime/build/opentype.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/@splinetool/runtime/build/physics.js": {
+    "file": "assets/physics.BM4kW-A5.js",
+    "name": "physics",
+    "src": "node_modules/@splinetool/runtime/build/physics.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/@splinetool/runtime/build/process.js": {
+    "file": "assets/process.B9H0U9ag.js",
+    "name": "process",
+    "src": "node_modules/@splinetool/runtime/build/process.js",
+    "isDynamicEntry": true
+  },
+  "node_modules/@splinetool/runtime/build/ui.js": {
+    "file": "assets/ui.L7l3pL7d.js",
+    "name": "ui",
+    "src": "node_modules/@splinetool/runtime/build/ui.js",
+    "isDynamicEntry": true
+  },
+  "src/content/blog-1.md?raw": {
+    "file": "assets/blog-1.Bj-wEC75.js",
+    "name": "blog-1",
+    "src": "src/content/blog-1.md?raw",
+    "isDynamicEntry": true
+  },
+  "src/content/blog-2.md?raw": {
+    "file": "assets/blog-2.BbnCu5ZQ.js",
+    "name": "blog-2",
+    "src": "src/content/blog-2.md?raw",
+    "isDynamicEntry": true
+  },
+  "src/content/blog-3.md?raw": {
+    "file": "assets/blog-3.BG5Kk-_B.js",
+    "name": "blog-3",
+    "src": "src/content/blog-3.md?raw",
+    "isDynamicEntry": true
+  },
+  "src/content/blog-4.md?raw": {
+    "file": "assets/blog-4.D5jbWEui.js",
+    "name": "blog-4",
+    "src": "src/content/blog-4.md?raw",
+    "isDynamicEntry": true
+  }
+}
