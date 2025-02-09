@@ -4,6 +4,7 @@ import { SplineScene } from "@/components/ui/splite";
 import { Card } from "@/components/ui/card";
 import { Spotlight } from "@/components/ui/spotlight";
 import { Dock, DockIcon, DockItem, DockLabel } from "@/components/ui/dock";
+import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Youtube, Twitter } from "lucide-react";
 
 const About = () => {
@@ -39,7 +40,7 @@ const About = () => {
     <div className="min-h-screen flex flex-col bg-background hero-gradient">
       <Navbar />
       <main className="flex-grow flex flex-col items-center justify-center pt-16">
-        <Card className="w-full max-w-7xl mx-auto bg-black/[0.96] relative overflow-hidden">
+        <Card className="w-full max-w-7xl mx-auto bg-transparent relative overflow-hidden border-0">
           <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" />
           
           <div className="flex flex-col md:flex-row h-full min-h-[500px]">
@@ -57,6 +58,18 @@ const About = () => {
                 learning performance and learning methodologies and I love helping 
                 others learn better.
               </p>
+              <Button 
+                asChild
+                className="mt-6 w-fit py-3 px-6 rounded-lg font-orbitron text-neon-cyan border border-neon-cyan bg-transparent hover:bg-gradient-to-r hover:from-pink-500 hover:to-neon-cyan hover:border-transparent hover:text-white transition-all duration-300"
+              >
+                <a 
+                  href="https://andreivisan.dev" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  Visit My Website
+                </a>
+              </Button>
             </div>
 
             {/* Right content */}
