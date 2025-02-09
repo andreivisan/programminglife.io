@@ -19,4 +19,11 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  base: process.env.NODE_ENV === 'production' 
+    ? '/programminglife.io/' 
+    : '/',
+  build: {
+    outDir: 'dist',
+    sourcemap: true,
+  }
 }));
