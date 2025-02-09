@@ -7,7 +7,7 @@ readTime: "3 min read"
 
 I found the following tweet online:
 
-<img src="/images/x_post_java_40.jpeg" alt="Tweet" />
+![Tweet](/x_post_java_40.jpeg)
 
 As I mentioned in my reply, I got very inspired by this list. As a senior Java engineer myself, I realised, I am probably familiar with most topics on this list but since I don’t use them daily, a refresh and a place where to store them all could benefit me and others as well. So I will share my notes on the first topic.
 

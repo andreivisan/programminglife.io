@@ -9,7 +9,7 @@ export const ServicesSection = () => {
     },
     {
       title: "AI Tools Development",
-      description: "Creating powerful AI solutions using Python and Go for business automation and innovation.",
+      description: "Creating powerful AI solutions using Java, Python and Go for business automation and innovation.",
       icon: <Brain className="w-8 h-8 text-neon-purple" />,
     },
     {
