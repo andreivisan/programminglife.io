@@ -313,151 +313,574 @@ body {
 
 .solder-kit {
   position: absolute;
-  top: 16%;
-  left: 12%;
-  width: 46%;
-  height: 44%;
+  top: 10%;
+  left: 8%;
+  width: 58%;
+  height: 54%;
   z-index: 2;
 }
 
-.station {
+.kit-base {
   position: absolute;
-  width: 48%;
-  height: 45%;
-  border-radius: 12px;
-  background: linear-gradient(155deg, #5b6169, #2d3138);
-  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1);
-}
-
-.station-screen {
-  position: absolute;
-  top: 16%;
-  left: 12%;
-  width: 50%;
-  height: 30%;
-  border-radius: 6px;
-  background: linear-gradient(145deg, #121417, #1c1f25);
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.65);
-}
-
-.station-knob {
-  position: absolute;
-  right: 16%;
-  bottom: 18%;
-  width: 18%;
-  aspect-ratio: 1;
+  bottom: 2%;
+  right: 6%;
+  width: 56%;
+  height: 46%;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #7a8088, #2a2f35 65%);
-  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.35);
+  background: radial-gradient(circle at 35% 30%, #4d525a, #2b2f35 55%, #171a1f 100%);
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 255, 255, 0.08),
+    0 8px 12px rgba(0, 0, 0, 0.35);
 }
 
-.station-brand {
-  position: absolute;
-  left: 12%;
-  bottom: 8%;
-  font-size: clamp(0.45rem, 0.7vw, 0.6rem);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--accent-warm);
-}
-
-.iron-stand {
-  position: absolute;
-  top: 10%;
-  left: 52%;
-  width: 40%;
-  height: 22%;
-  border-radius: 999px;
-  background: linear-gradient(160deg, #3f454d, #22252b);
-  border: 2px solid rgba(255, 255, 255, 0.1);
-  transform: rotate(-8deg);
-}
-
-.iron {
-  position: absolute;
-  top: 20%;
-  left: 48%;
-  width: 46%;
-  height: 7%;
-  border-radius: 999px;
-  background: linear-gradient(90deg, #4e545c, #1d2026);
-  transform: rotate(-10deg);
-}
-
-.iron::after {
+.kit-base::before {
   content: "";
   position: absolute;
-  right: -7%;
-  top: -35%;
-  width: 16%;
-  height: 170%;
-  background: linear-gradient(90deg, #d2b58a, #9c7b52);
-  clip-path: polygon(0 25%, 100% 50%, 0 75%);
+  inset: 12%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, rgba(255, 255, 255, 0.18), rgba(0, 0, 0, 0.3));
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.45);
 }
 
-.spool {
+.kit-base::after {
+  content: "";
   position: absolute;
-  right: 4%;
-  bottom: 8%;
+  inset: -4%;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  opacity: 0.7;
+}
+
+.base-knob {
+  position: absolute;
+  right: 30%;
+  bottom: 26%;
   width: 20%;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: radial-gradient(circle at 50% 50%, #2a2e35 0 35%, #b67b4c 36% 50%, #23262c 51% 100%);
-  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.4);
+  background: radial-gradient(circle at 30% 30%, #5e646d, #1e2127 65%);
+  box-shadow:
+    inset 0 0 0 2px rgba(0, 0, 0, 0.35),
+    0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.sponge {
+.sponge-pocket {
   position: absolute;
-  left: 4%;
-  bottom: 8%;
-  width: 22%;
-  height: 18%;
-  border-radius: 8px;
-  background: linear-gradient(140deg, #c7a25e, #7a5a2b);
-  box-shadow: inset 0 0 0 2px rgba(70, 50, 23, 0.5);
+  left: 14%;
+  bottom: 18%;
+  width: 26%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 40%, #3b4047, #1b1f25);
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponge-disc {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #f7e58b, #cda94d);
+  box-shadow: inset 0 0 0 2px rgba(120, 80, 20, 0.4);
+}
+
+.kit-arm {
+  position: absolute;
+  bottom: 16%;
+  right: 28%;
+  width: 18%;
+  height: 70%;
+  border-radius: 120px;
+  background: linear-gradient(180deg, #4f555d, #1d2025);
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 255, 255, 0.08),
+    0 8px 14px rgba(0, 0, 0, 0.35);
+  transform: rotate(-12deg);
+}
+
+.kit-arm::before {
+  content: "";
+  position: absolute;
+  inset: 12% 28%;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.kit-iron {
+  position: absolute;
+  top: 2%;
+  right: 34%;
+  width: 18%;
+  height: 62%;
+  transform: rotate(-10deg);
+}
+
+.iron-body {
+  position: absolute;
+  inset: 0 18% 20% 18%;
+  border-radius: 999px;
+  background: linear-gradient(160deg, #4a4f56, #1b1e23);
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.08);
+}
+
+.iron-body::after {
+  content: "";
+  position: absolute;
+  inset: 12% 22%;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.iron-ring {
+  position: absolute;
+  top: 44%;
+  left: 26%;
+  width: 48%;
+  height: 12%;
+  border-radius: 999px;
+  border: 2px solid #5bd38a;
+  box-shadow: 0 0 10px rgba(91, 211, 138, 0.4);
+}
+
+.iron-button {
+  position: absolute;
+  top: 56%;
+  left: 42%;
+  width: 16%;
+  height: 10%;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 30%, #2a2f36, #111318);
+  box-shadow: inset 0 0 0 2px rgba(91, 211, 138, 0.6);
+}
+
+.iron-tip {
+  position: absolute;
+  bottom: -8%;
+  left: 45%;
+  width: 10%;
+  height: 24%;
+  background: linear-gradient(180deg, #d9c6a2, #7c5d32);
+  border-radius: 0 0 8px 8px;
+}
+
+.iron-tip::after {
+  content: "";
+  position: absolute;
+  bottom: -35%;
+  left: -15%;
+  width: 130%;
+  height: 45%;
+  background: linear-gradient(180deg, #f2e1c1, #a67d43);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.kit-pen {
+  position: absolute;
+  left: 6%;
+  top: 42%;
+  width: 30%;
+  height: 8%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #3e434b, #191c21);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+  transform: rotate(-12deg);
+}
+
+.kit-pen::before {
+  content: "";
+  position: absolute;
+  left: 18%;
+  top: 18%;
+  width: 12%;
+  height: 64%;
+  border-radius: 999px;
+  border: 2px solid rgba(223, 187, 89, 0.7);
+}
+
+.kit-pen::after {
+  content: "";
+  position: absolute;
+  right: -6%;
+  top: 25%;
+  width: 16%;
+  height: 50%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #a7aeb6, #5a6068);
+}
+
+.kit-tweezers {
+  position: absolute;
+  left: 20%;
+  top: 58%;
+  width: 28%;
+  height: 5%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #4f545c, #24282f);
+  transform: rotate(12deg);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.kit-tweezers::after {
+  content: "";
+  position: absolute;
+  right: -10%;
+  top: 10%;
+  width: 18%;
+  height: 80%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #c2c9d2, #6a7078);
+}
+
+.kit-tips {
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+  display: flex;
+  gap: 6%;
+  width: 24%;
+  height: 10%;
+  align-items: center;
+}
+
+.kit-tips span {
+  flex: 1;
+  height: 60%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #aeb6c0, #5d646d);
+  position: relative;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
+}
+
+.kit-tips span::after {
+  content: "";
+  position: absolute;
+  right: -12%;
+  top: 15%;
+  width: 35%;
+  height: 70%;
+  background: linear-gradient(90deg, #f0e1c3, #b98952);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
 }
 
 .pcb {
   position: absolute;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #0f4a3f, #0b2d27);
-  border: 1px solid rgba(110, 214, 179, 0.4);
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  border-radius: 10px;
+  background: linear-gradient(145deg, #1b9776, #0f5b49);
+  border: 1px solid rgba(140, 232, 200, 0.55);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 8px 16px rgba(0, 0, 0, 0.25);
   z-index: 2;
+  overflow: hidden;
 }
 
 .pcb::before {
   content: "";
   position: absolute;
-  inset: 12%;
+  inset: 8%;
   background:
-    repeating-linear-gradient(90deg, rgba(116, 234, 196, 0.35) 0 2px, transparent 2px 10px),
-    repeating-linear-gradient(0deg, rgba(116, 234, 196, 0.35) 0 2px, transparent 2px 10px);
-  opacity: 0.6;
+    repeating-linear-gradient(90deg, rgba(145, 236, 203, 0.3) 0 2px, transparent 2px 10px),
+    repeating-linear-gradient(0deg, rgba(145, 236, 203, 0.3) 0 2px, transparent 2px 10px);
+  opacity: 0.55;
+}
+
+.pcb::after {
+  content: "";
+  position: absolute;
+  inset: 4%;
+  background: radial-gradient(circle, rgba(216, 255, 238, 0.8) 0 2px, transparent 2px);
+  background-size: 18px 18px;
+  opacity: 0.35;
 }
 
 .pcb-main {
-  width: 26%;
-  height: 22%;
+  width: 32%;
+  height: 24%;
   top: 48%;
   left: 48%;
   transform: rotate(-8deg);
 }
 
 .pcb-secondary {
-  width: 18%;
-  height: 16%;
-  top: 60%;
-  left: 26%;
+  width: 22%;
+  height: 18%;
+  top: 62%;
+  left: 24%;
   transform: rotate(8deg);
 }
 
 .pcb-tertiary {
-  width: 14%;
-  height: 12%;
+  width: 18%;
+  height: 14%;
   top: 34%;
   left: 64%;
   transform: rotate(18deg);
+}
+
+.pcb-chip {
+  position: absolute;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #1f2228, #0d0f13);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+.pcb-chip::before,
+.pcb-chip::after {
+  content: "";
+  position: absolute;
+  left: -8%;
+  right: -8%;
+  height: 18%;
+  background: repeating-linear-gradient(90deg, rgba(180, 189, 197, 0.7) 0 3px, transparent 3px 8px);
+  opacity: 0.6;
+}
+
+.pcb-chip::before {
+  top: -12%;
+}
+
+.pcb-chip::after {
+  bottom: -12%;
+}
+
+.pcb-cap {
+  position: absolute;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #e2e7eb, #7b828c);
+  box-shadow:
+    inset 0 -2px 4px rgba(0, 0, 0, 0.45),
+    0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pcb-cap::after {
+  content: "";
+  position: absolute;
+  inset: 20%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.6), transparent 60%);
+}
+
+.pcb-terminal {
+  position: absolute;
+  border-radius: 6px;
+  background: linear-gradient(160deg, #a0d8b7, #4f8265);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.45),
+    0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.pcb-terminal::after {
+  content: "";
+  position: absolute;
+  inset: 22% 12%;
+  background: radial-gradient(circle, rgba(33, 66, 44, 0.9) 0 4px, transparent 4px);
+  background-size: 12px 12px;
+}
+
+.pcb-pin-row {
+  position: absolute;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #2b2e34, #171a1f);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.pcb-pin-row::after {
+  content: "";
+  position: absolute;
+  inset: 22% 8%;
+  background: repeating-linear-gradient(90deg, #c8b282 0 3px, transparent 3px 7px);
+}
+
+.pcb-resistor-pack {
+  position: absolute;
+  border-radius: 4px;
+  background: linear-gradient(145deg, #2a2f35, #161a1f);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.pcb-resistor-pack::before {
+  content: "";
+  position: absolute;
+  inset: 20% 10%;
+  background: repeating-linear-gradient(90deg, rgba(210, 175, 110, 0.8) 0 4px, transparent 4px 10px);
+  opacity: 0.7;
+}
+
+.pcb-crystal {
+  position: absolute;
+  border-radius: 6px;
+  background: linear-gradient(145deg, #d7dce2, #8e949c);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.25);
+}
+
+.pcb-crystal::after {
+  content: "";
+  position: absolute;
+  inset: 20% 15%;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.pcb-leds {
+  position: absolute;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(153, 244, 198, 0.9) 0 3px, transparent 4px);
+  background-size: 10px 10px;
+  box-shadow: 0 0 8px rgba(90, 220, 170, 0.6);
+}
+
+.pcb-main .pcb-chip-lg {
+  width: 28%;
+  height: 22%;
+  top: 18%;
+  left: 36%;
+}
+
+.pcb-main .pcb-chip-md {
+  width: 22%;
+  height: 18%;
+  top: 50%;
+  left: 58%;
+}
+
+.pcb-main .pcb-chip-sm {
+  width: 16%;
+  height: 14%;
+  top: 22%;
+  left: 70%;
+}
+
+.pcb-main .pcb-cap-1 {
+  width: 10%;
+  top: 14%;
+  left: 12%;
+}
+
+.pcb-main .pcb-cap-2 {
+  width: 8%;
+  top: 62%;
+  left: 14%;
+}
+
+.pcb-main .pcb-cap-3 {
+  width: 7%;
+  top: 68%;
+  left: 34%;
+}
+
+.pcb-main .pcb-terminal {
+  width: 32%;
+  height: 22%;
+  top: 64%;
+  left: 8%;
+}
+
+.pcb-main .pcb-pin-row {
+  width: 40%;
+  height: 14%;
+  top: 8%;
+  left: 50%;
+}
+
+.pcb-main .pcb-crystal {
+  width: 16%;
+  height: 12%;
+  top: 42%;
+  left: 28%;
+}
+
+.pcb-main .pcb-leds {
+  width: 32%;
+  height: 10%;
+  top: 76%;
+  left: 52%;
+}
+
+.pcb-secondary .pcb-chip-md {
+  width: 32%;
+  height: 22%;
+  top: 16%;
+  left: 18%;
+}
+
+.pcb-secondary .pcb-chip-sm {
+  width: 26%;
+  height: 20%;
+  top: 46%;
+  left: 52%;
+}
+
+.pcb-secondary .pcb-chip-tiny {
+  width: 18%;
+  height: 14%;
+  top: 14%;
+  left: 64%;
+}
+
+.pcb-secondary .pcb-cap-1 {
+  width: 10%;
+  top: 62%;
+  left: 18%;
+}
+
+.pcb-secondary .pcb-cap-2 {
+  width: 9%;
+  top: 62%;
+  left: 34%;
+}
+
+.pcb-secondary .pcb-terminal-small {
+  width: 32%;
+  height: 22%;
+  top: 66%;
+  left: 58%;
+}
+
+.pcb-secondary .pcb-pin-row-short {
+  width: 50%;
+  height: 14%;
+  top: 8%;
+  left: 10%;
+}
+
+.pcb-secondary .pcb-resistor-pack {
+  width: 28%;
+  height: 12%;
+  top: 36%;
+  left: 10%;
+}
+
+.pcb-tertiary .pcb-chip-sm {
+  width: 44%;
+  height: 28%;
+  top: 18%;
+  left: 24%;
+}
+
+.pcb-tertiary .pcb-cap-1 {
+  width: 18%;
+  top: 58%;
+  left: 16%;
+}
+
+.pcb-tertiary .pcb-resistor-pack {
+  width: 36%;
+  height: 16%;
+  top: 62%;
+  left: 44%;
+}
+
+.pcb-tertiary .pcb-pin-row-tiny {
+  width: 60%;
+  height: 16%;
+  top: 6%;
+  left: 20%;
 }
 
 .wires {

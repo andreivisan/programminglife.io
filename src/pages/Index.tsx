@@ -12,7 +12,7 @@ const Index = () => {
         <div
           className="work-table"
           role="img"
-          aria-label="Top-down view of a workbench with a cutting mat, a Fanttik soldering kit, and circuit boards under a focused light."
+          aria-label="Top-down view of a workbench with a cutting mat, a soldering kit, and circuit boards under a focused light."
         >
           <div className="table-surface">
             <div className="spotlight" aria-hidden="true" />
@@ -42,19 +42,55 @@ const Index = () => {
                 <div className="mat-caption">CUTTING MAT</div>
               </div>
               <div className="solder-kit">
-                <div className="station">
-                  <div className="station-screen" />
-                  <div className="station-knob" />
-                  <div className="station-brand">Fanttik</div>
+                <div className="kit-base">
+                  <div className="base-knob" />
+                  <div className="sponge-pocket">
+                    <div className="sponge-disc" />
+                  </div>
                 </div>
-                <div className="iron-stand" />
-                <div className="iron" />
-                <div className="spool" />
-                <div className="sponge" />
+                <div className="kit-arm" />
+                <div className="kit-iron">
+                  <div className="iron-body" />
+                  <div className="iron-ring" />
+                  <div className="iron-button" />
+                  <div className="iron-tip" />
+                </div>
+                <div className="kit-pen" />
+                <div className="kit-tweezers" />
+                <div className="kit-tips">
+                  <span />
+                  <span />
+                  <span />
+                </div>
               </div>
-              <div className="pcb pcb-main" />
-              <div className="pcb pcb-secondary" />
-              <div className="pcb pcb-tertiary" />
+              <div className="pcb pcb-main">
+                <div className="pcb-chip pcb-chip-lg" />
+                <div className="pcb-chip pcb-chip-md" />
+                <div className="pcb-chip pcb-chip-sm" />
+                <div className="pcb-cap pcb-cap-1" />
+                <div className="pcb-cap pcb-cap-2" />
+                <div className="pcb-cap pcb-cap-3" />
+                <div className="pcb-terminal" />
+                <div className="pcb-pin-row" />
+                <div className="pcb-crystal" />
+                <div className="pcb-leds" />
+              </div>
+              <div className="pcb pcb-secondary">
+                <div className="pcb-chip pcb-chip-md" />
+                <div className="pcb-chip pcb-chip-sm" />
+                <div className="pcb-chip pcb-chip-tiny" />
+                <div className="pcb-cap pcb-cap-1" />
+                <div className="pcb-cap pcb-cap-2" />
+                <div className="pcb-terminal pcb-terminal-small" />
+                <div className="pcb-pin-row pcb-pin-row-short" />
+                <div className="pcb-resistor-pack" />
+              </div>
+              <div className="pcb pcb-tertiary">
+                <div className="pcb-chip pcb-chip-sm" />
+                <div className="pcb-cap pcb-cap-1" />
+                <div className="pcb-resistor-pack" />
+                <div className="pcb-pin-row pcb-pin-row-tiny" />
+              </div>
               <div className="wires" />
             </div>
           </div>
