@@ -45,7 +45,9 @@ body {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background: radial-gradient(circle at 50% 20%, #1c2128 0%, #0b0d11 45%, #050607 100%);
+  background:
+    radial-gradient(circle at center, rgba(5, 6, 7, 0) 0%, rgba(5, 6, 7, 0.75) 65%, rgba(5, 6, 7, 0.95) 100%),
+    radial-gradient(circle at 50% 20%, #1c2128 0%, #0b0d11 45%, #050607 100%);
 }
 
 .wip-page::before {
@@ -88,14 +90,6 @@ body {
   position: relative;
   padding: clamp(1rem, 4vw, 3rem);
   z-index: 1;
-}
-
-.wip-room::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at center, transparent 0%, rgba(5, 6, 7, 0.75) 65%, rgba(5, 6, 7, 0.95) 100%);
-  pointer-events: none;
 }
 
 .table-shadow {
